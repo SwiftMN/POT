@@ -13,7 +13,7 @@
         <!--Login-->
         <scene sceneID="sRg-ms-qnP">
             <objects>
-                <viewController title="Login" id="hsV-5C-Wun" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hsV-5C-Wun" customClass="LoginViewController" customModule="POT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdx-cJ-1df">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
