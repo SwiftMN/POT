@@ -100,9 +100,7 @@
 				4396706720A5E33F002BC11E /* AppDelegate.swift */,
 				4396706920A5E33F002BC11E /* ViewController.swift */,
 				4396706B20A5E33F002BC11E /* Main.storyboard */,
-				4396706E20A5E340002BC11E /* Assets.xcassets */,
-				4396707020A5E340002BC11E /* LaunchScreen.storyboard */,
-				4396707320A5E340002BC11E /* Info.plist */,
+				4396709520A5E444002BC11E /* Boring */,
 			);
 			path = POT;
 			sourceTree = "<group>";
@@ -123,6 +121,16 @@
 				4396708920A5E340002BC11E /* Info.plist */,
 			);
 			path = POTUITests;
+			sourceTree = "<group>";
+		};
+		4396709520A5E444002BC11E /* Boring */ = {
+			isa = PBXGroup;
+			children = (
+				4396706E20A5E340002BC11E /* Assets.xcassets */,
+				4396707020A5E340002BC11E /* LaunchScreen.storyboard */,
+				4396707320A5E340002BC11E /* Info.plist */,
+			);
+			path = Boring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
