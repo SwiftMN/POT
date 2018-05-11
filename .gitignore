@@ -68,3 +68,6 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 /POT/POT.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 /POT/POT.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/POT/POT.xcworkspace/contents.xcworkspacedata
+/POT/POT.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+.DS_Store

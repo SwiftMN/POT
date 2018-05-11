@@ -1,0 +1,6 @@
+framework module Pods_POTUITests {
+  umbrella header "Pods-POTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
