@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
+		437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0D20A60BBA00C909E2 /* Endpoint.swift */; };
+		437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */; };
+		437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1120A60C2900C909E2 /* HTTPTask.swift */; };
+		437E5C1420A60CDE00C909E2 /* ParamterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1320A60CDE00C909E2 /* ParamterEncoder.swift */; };
+		437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1520A60DA300C909E2 /* HTTPError.swift */; };
+		437E5C1920A60E0A00C909E2 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1820A60E0A00C909E2 /* URLParameterEncoder.swift */; };
+		437E5C1B20A60FDE00C909E2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1A20A60FDE00C909E2 /* NetworkService.swift */; };
+		437E5C1D20A6103D00C909E2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1C20A6103D00C909E2 /* Service.swift */; };
+		437E5C1F20A6109A00C909E2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1E20A6109A00C909E2 /* Session.swift */; };
 		4396706820A5E33F002BC11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396706720A5E33F002BC11E /* AppDelegate.swift */; };
 		4396706D20A5E33F002BC11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396706B20A5E33F002BC11E /* Main.storyboard */; };
 		4396706F20A5E340002BC11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4396706E20A5E340002BC11E /* Assets.xcassets */; };
@@ -40,6 +49,16 @@
 /* Begin PBXFileReference section */
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		437E5C0D20A60BBA00C909E2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		437E5C1120A60C2900C909E2 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		437E5C1320A60CDE00C909E2 /* ParamterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamterEncoder.swift; sourceTree = "<group>"; };
+		437E5C1520A60DA300C909E2 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		437E5C1820A60E0A00C909E2 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		437E5C1A20A60FDE00C909E2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		437E5C1C20A6103D00C909E2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		437E5C1E20A6109A00C909E2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		437E5C2220A61C8400C909E2 /* POT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = POT.entitlements; sourceTree = "<group>"; };
 		4396706420A5E33F002BC11E /* POT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396706720A5E33F002BC11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4396706C20A5E33F002BC11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +123,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		437E5C0B20A60B6C00C909E2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				437E5C1720A60DEB00C909E2 /* Implementations */,
+				437E5C0C20A60B7800C909E2 /* Protocols */,
+				437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */,
+				437E5C1120A60C2900C909E2 /* HTTPTask.swift */,
+				437E5C1520A60DA300C909E2 /* HTTPError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		437E5C0C20A60B7800C909E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				437E5C0D20A60BBA00C909E2 /* Endpoint.swift */,
+				437E5C1320A60CDE00C909E2 /* ParamterEncoder.swift */,
+				437E5C1A20A60FDE00C909E2 /* NetworkService.swift */,
+				437E5C1E20A6109A00C909E2 /* Session.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		437E5C1720A60DEB00C909E2 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				437E5C1820A60E0A00C909E2 /* URLParameterEncoder.swift */,
+				437E5C1C20A6103D00C909E2 /* Service.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
 		4396705B20A5E33F002BC11E = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +180,8 @@
 		4396706620A5E33F002BC11E /* POT */ = {
 			isa = PBXGroup;
 			children = (
+				437E5C2220A61C8400C909E2 /* POT.entitlements */,
+				437E5C0B20A60B6C00C909E2 /* Networking */,
 				4396707320A5E340002BC11E /* Info.plist */,
 				4396709620A5E9A6002BC11E /* Login */,
 				4396709520A5E444002BC11E /* Boring */,
@@ -261,6 +314,11 @@
 				TargetAttributes = {
 					4396706320A5E33F002BC11E = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					4396707720A5E340002BC11E = {
 						CreatedOnToolsVersion = 9.3;
@@ -472,7 +530,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437E5C1920A60E0A00C909E2 /* URLParameterEncoder.swift in Sources */,
+				437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */,
+				437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */,
+				437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */,
+				437E5C1B20A60FDE00C909E2 /* NetworkService.swift in Sources */,
+				437E5C1420A60CDE00C909E2 /* ParamterEncoder.swift in Sources */,
 				4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */,
+				437E5C1F20A6109A00C909E2 /* Session.swift in Sources */,
+				437E5C1D20A6103D00C909E2 /* Service.swift in Sources */,
+				437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */,
 				4396706820A5E33F002BC11E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +717,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POT/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -666,7 +736,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POT/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -683,7 +756,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POTTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -701,7 +778,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POTTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -718,7 +799,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POTUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -735,7 +820,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM75P97468;
 				INFOPLIST_FILE = POTUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.POTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
