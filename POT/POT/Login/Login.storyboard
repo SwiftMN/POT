@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,29 +19,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKL-rG-fex">
-                                <rect key="frame" x="8" y="623" width="359" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="1Eh-5A-GAr"/>
-                                </constraints>
-                                <state key="normal" title="Login To Spotify"/>
-                                <connections>
-                                    <action selector="loginToSpotify:" destination="hsV-5C-Wun" eventType="touchUpInside" id="1Sl-Qf-Qt9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kpG-mX-Hy4">
+                                <rect key="frame" x="9" y="572" width="357" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKL-rG-fex">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="1Eh-5A-GAr"/>
+                                        </constraints>
+                                        <state key="normal" title="Login To Spotify"/>
+                                        <connections>
+                                            <action selector="loginToSpotify:" destination="hsV-5C-Wun" eventType="touchUpInside" id="1Sl-Qf-Qt9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ2-UU-ibE">
+                                        <rect key="frame" x="0.0" y="45" width="357" height="30"/>
+                                        <state key="normal" title="Top Artists &amp; Tracks"/>
+                                        <connections>
+                                            <segue destination="XlT-3y-3Zv" kind="show" id="WyT-9G-3Rs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aKL-rG-fex" firstAttribute="leading" secondItem="BL0-32-Fcm" secondAttribute="leading" constant="8" id="7f3-Qe-z4n"/>
-                            <constraint firstItem="BL0-32-Fcm" firstAttribute="trailing" secondItem="aKL-rG-fex" secondAttribute="trailing" constant="8" id="gbY-cm-ZPK"/>
-                            <constraint firstItem="BL0-32-Fcm" firstAttribute="bottom" secondItem="aKL-rG-fex" secondAttribute="bottom" constant="8" id="nje-Ph-DhN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kpG-mX-Hy4" secondAttribute="bottom" constant="20" id="CFi-IW-ddD"/>
+                            <constraint firstItem="BL0-32-Fcm" firstAttribute="trailing" secondItem="kpG-mX-Hy4" secondAttribute="trailing" constant="9" id="NIh-aC-xCQ"/>
+                            <constraint firstItem="kpG-mX-Hy4" firstAttribute="leading" secondItem="BL0-32-Fcm" secondAttribute="leading" constant="9" id="mVQ-hW-Jbg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BL0-32-Fcm"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="aKL-rG-fex" id="mVy-v4-rb6"/>
+                        <outlet property="viewTop" destination="fQ2-UU-ibE" id="R99-80-n4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1y1-Fk-97T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127" y="166"/>
+        </scene>
+        <!--Top-->
+        <scene sceneID="wSY-Ia-jVD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Top" id="XlT-3y-3Zv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrj-eY-ScT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="221"/>
         </scene>
     </scenes>
 </document>

@@ -38,13 +38,25 @@ class Service: NetworkService {
         print("Request")
       case .requestQueryParameters(let params) :
         print("Request w/ Query")
-        if let params = params {
-          do {
-            try URLParameterEncoder.encode(request: &request, with: params)
-          } catch {
-            print("Error encoding in Service")
-          }
+        do {
+          try URLParameterEncoder.encode(request: &request, with: params)
+        } catch {
+          print("Error encoding in Service with Query Params")
         }
+
+      case .requestBodyParameters(let params) :
+        print("Request w/ Body")
+        do {
+          try JSONParameterEncoder.encode(request: &request, with: params)
+        } catch {
+          print("Error encoding in Service with JSON")
+        }
+      }
+    }
+
+    if let headers = endpoint.headers {
+      for (key, value) in headers {
+        request.setValue(value, forHTTPHeaderField: key)
       }
     }
 

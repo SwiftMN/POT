@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias NetworkServiceCompletion = (Data?, URLResponse?, Error?) -> Void
+typealias NetworkServiceCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
 
 protocol NetworkService: class, Session {
   func request(endpoint: Endpoint, completion: @escaping NetworkServiceCompletion)

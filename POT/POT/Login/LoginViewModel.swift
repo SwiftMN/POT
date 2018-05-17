@@ -10,20 +10,23 @@ import UIKit
 import OAuthSwift
 import Swinject
 
-final class LoginViewModel {
-  private let container: Container
+final class LoginViewModel: NSObject {
+  // MARK: Private
   private let spotifyAccess: SpotifyAccess
-  
-  init(container: Container) {
-    self.container = container
 
+  // MARK: Public
+  @objc dynamic var authorization: Authorization? = nil
+
+  // MARK: Init
+  init(container: Container) {
     guard
-      let sa = self.container.resolve(SpotifyAccess.self)
+      let sa = container.resolve(SpotifyAccess.self)
     else { fatalError("No SpotifyAccess") }
 
     spotifyAccess = sa
   }
 
+  // MARK: Methods
   func authorizeSpotify(from: UIViewController) {
     let authorizeURL = LoginApi.authorize.fullURL
     let tokenURL = LoginApi.token.fullURL
@@ -43,8 +46,8 @@ final class LoginViewModel {
     let _ = oauthswift.authorize(withCallbackURL: url,
                                  scope: scopes,
                                  state: state,
-                                 success: { credential, response, params in
-      print("Success, Got Credentials: \(credential.oauthToken)")
+                                 success: { [weak self] credential, response, params in
+                                  self?.authorization = Authorization(type: "Bearer", accessToken: credential.oauthToken)
     }) { error in
       print("Error")
     }

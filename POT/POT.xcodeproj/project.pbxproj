@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
+		4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572920AE094B00310970 /* ArtistTableViewCell.swift */; };
+		4342673320ADE8B100414FE2 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */; };
+		4342673620ADF1CF00414FE2 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673520ADF1CF00414FE2 /* Injector.swift */; };
+		4342673820ADF79A00414FE2 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673720ADF79A00414FE2 /* Artist.swift */; };
+		4342673A20ADF87400414FE2 /* Decipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673920ADF87400414FE2 /* Decipher.swift */; };
+		4342673C20ADF8CF00414FE2 /* JSONDecipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673B20ADF8CF00414FE2 /* JSONDecipher.swift */; };
 		43679AB820AD202700E79661 /* SpotifyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AB720AD202700E79661 /* SpotifyAccess.swift */; };
+		43679ABA20ADC9B000E79661 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AB920ADC9B000E79661 /* Authorization.swift */; };
+		43679ABD20ADD32700E79661 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679ABC20ADD32700E79661 /* TopViewController.swift */; };
+		43679ABF20ADD34000E79661 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43679ABE20ADD34000E79661 /* Top.storyboard */; };
+		43679AC120ADD34C00E79661 /* TopApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC020ADD34C00E79661 /* TopApi.swift */; };
+		43679AC320ADD35E00E79661 /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC220ADD35E00E79661 /* TopViewModel.swift */; };
 		437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0D20A60BBA00C909E2 /* Endpoint.swift */; };
 		437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */; };
 		437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1120A60C2900C909E2 /* HTTPTask.swift */; };
@@ -53,7 +64,18 @@
 /* Begin PBXFileReference section */
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4328572920AE094B00310970 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		4342673520ADF1CF00414FE2 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		4342673720ADF79A00414FE2 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		4342673920ADF87400414FE2 /* Decipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decipher.swift; sourceTree = "<group>"; };
+		4342673B20ADF8CF00414FE2 /* JSONDecipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecipher.swift; sourceTree = "<group>"; };
 		43679AB720AD202700E79661 /* SpotifyAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAccess.swift; sourceTree = "<group>"; };
+		43679AB920ADC9B000E79661 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		43679ABC20ADD32700E79661 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		43679ABE20ADD34000E79661 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		43679AC020ADD34C00E79661 /* TopApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopApi.swift; sourceTree = "<group>"; };
+		43679AC220ADD35E00E79661 /* TopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModel.swift; sourceTree = "<group>"; };
 		437E5C0D20A60BBA00C909E2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		437E5C1120A60C2900C909E2 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
@@ -131,12 +153,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4328572820AE093600310970 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4328572920AE094B00310970 /* ArtistTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4342673420ADF1C100414FE2 /* Injector */ = {
+			isa = PBXGroup;
+			children = (
+				4342673520ADF1CF00414FE2 /* Injector.swift */,
+			);
+			path = Injector;
+			sourceTree = "<group>";
+		};
 		43679AB620AD200600E79661 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				43679AB720AD202700E79661 /* SpotifyAccess.swift */,
+				43679AB920ADC9B000E79661 /* Authorization.swift */,
+				4342673720ADF79A00414FE2 /* Artist.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		43679ABB20ADD2FE00E79661 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				43679ABE20ADD34000E79661 /* Top.storyboard */,
+				43679ABC20ADD32700E79661 /* TopViewController.swift */,
+				43679AC020ADD34C00E79661 /* TopApi.swift */,
+				43679AC220ADD35E00E79661 /* TopViewModel.swift */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 		437E5C0B20A60B6C00C909E2 /* Networking */ = {
@@ -158,6 +209,7 @@
 				437E5C1320A60CDE00C909E2 /* ParamterEncoder.swift */,
 				437E5C1A20A60FDE00C909E2 /* NetworkService.swift */,
 				437E5C1E20A6109A00C909E2 /* Session.swift */,
+				4342673920ADF87400414FE2 /* Decipher.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -167,6 +219,8 @@
 			children = (
 				437E5C1820A60E0A00C909E2 /* URLParameterEncoder.swift */,
 				437E5C1C20A6103D00C909E2 /* Service.swift */,
+				4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */,
+				4342673B20ADF8CF00414FE2 /* JSONDecipher.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -175,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				4396706620A5E33F002BC11E /* POT */,
+				437E5C2220A61C8400C909E2 /* POT.entitlements */,
+				4396707320A5E340002BC11E /* Info.plist */,
 				4396707B20A5E340002BC11E /* POTTests */,
 				4396708620A5E340002BC11E /* POTUITests */,
 				4396706520A5E33F002BC11E /* Products */,
@@ -196,10 +252,11 @@
 		4396706620A5E33F002BC11E /* POT */ = {
 			isa = PBXGroup;
 			children = (
+				4328572820AE093600310970 /* Views */,
+				4342673420ADF1C100414FE2 /* Injector */,
+				43679ABB20ADD2FE00E79661 /* Top */,
 				43679AB620AD200600E79661 /* Models */,
-				437E5C2220A61C8400C909E2 /* POT.entitlements */,
 				437E5C0B20A60B6C00C909E2 /* Networking */,
-				4396707320A5E340002BC11E /* Info.plist */,
 				4396709620A5E9A6002BC11E /* Login */,
 				4396709520A5E444002BC11E /* Boring */,
 			);
@@ -377,6 +434,7 @@
 			files = (
 				43EB8B7620AD1C5C00214856 /* SpotifyAccess.plist in Resources */,
 				4396709820A5E9D1002BC11E /* Login.storyboard in Resources */,
+				43679ABF20ADD34000E79661 /* Top.storyboard in Resources */,
 				4396707220A5E340002BC11E /* LaunchScreen.storyboard in Resources */,
 				4396706F20A5E340002BC11E /* Assets.xcassets in Resources */,
 				4396706D20A5E33F002BC11E /* Main.storyboard in Resources */,
@@ -562,16 +620,26 @@
 				437E5C1920A60E0A00C909E2 /* URLParameterEncoder.swift in Sources */,
 				437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */,
 				437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */,
+				43679AC320ADD35E00E79661 /* TopViewModel.swift in Sources */,
+				43679ABD20ADD32700E79661 /* TopViewController.swift in Sources */,
+				4342673820ADF79A00414FE2 /* Artist.swift in Sources */,
 				437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */,
+				43679AC120ADD34C00E79661 /* TopApi.swift in Sources */,
 				437E5C1B20A60FDE00C909E2 /* NetworkService.swift in Sources */,
 				43679AB820AD202700E79661 /* SpotifyAccess.swift in Sources */,
 				437E5C1420A60CDE00C909E2 /* ParamterEncoder.swift in Sources */,
 				4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */,
+				43679ABA20ADC9B000E79661 /* Authorization.swift in Sources */,
 				43EB8B7420AD1AD700214856 /* LoginViewModel.swift in Sources */,
 				437E5C1F20A6109A00C909E2 /* Session.swift in Sources */,
+				4342673620ADF1CF00414FE2 /* Injector.swift in Sources */,
 				437E5C1D20A6103D00C909E2 /* Service.swift in Sources */,
+				4342673A20ADF87400414FE2 /* Decipher.swift in Sources */,
+				4342673C20ADF8CF00414FE2 /* JSONDecipher.swift in Sources */,
 				437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */,
 				4396706820A5E33F002BC11E /* AppDelegate.swift in Sources */,
+				4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */,
+				4342673320ADE8B100414FE2 /* JSONParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
