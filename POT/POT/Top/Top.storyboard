@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TXf-Rq-Rhn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TXf-Rq-Rhn">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" name="PotGreen"/>
                                 <color key="separatorColor" name="PotGreen"/>
@@ -55,6 +55,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vx2-CQ-pJu" id="UL9-aG-c5t"/>
+                                    <outlet property="delegate" destination="vx2-CQ-pJu" id="vL3-hB-y4n"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -69,11 +70,20 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="TXf-Rq-Rhn" id="buZ-Ik-8ru"/>
+                        <segue destination="fAk-9w-WsM" kind="show" identifier="ShowTopTracks" id="ASE-HV-2iG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgN-VB-SIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-15.199999999999999" y="90.404797601199405"/>
+        </scene>
+        <!--Tracks-->
+        <scene sceneID="H3f-U4-NoE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tracks" id="fAk-9w-WsM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXY-3Q-BpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="7"/>
         </scene>
     </scenes>
     <resources>

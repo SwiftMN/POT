@@ -35,6 +35,20 @@ final class TopViewController: UIViewController {
   }
 }
 
+extension TopViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let artist = viewModel.artists[indexPath.row]
+
+    // INJECT
+    Injector.shared.container.register(Artist.self) { resolver in
+      return artist
+    }
+
+    // Segue
+    performSegue(withIdentifier: "ShowTopTracks", sender: nil)
+  }
+}
+
 extension TopViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return viewModel.artists.count

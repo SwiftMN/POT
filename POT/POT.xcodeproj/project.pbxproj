@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
 		4311677720AE1DE7000A150B /* techno_penguin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4311677620AE1DE7000A150B /* techno_penguin.json */; };
+		4311677A20AE2200000A150B /* Tracks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4311677920AE2200000A150B /* Tracks.storyboard */; };
+		4311677C20AE221A000A150B /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311677B20AE221A000A150B /* TracksViewController.swift */; };
+		4311677E20AE22AE000A150B /* TracksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311677D20AE22AE000A150B /* TracksApi.swift */; };
+		4311678020AE22BE000A150B /* TracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311677F20AE22BE000A150B /* TracksViewModel.swift */; };
+		4311678220AE24C9000A150B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311678120AE24C9000A150B /* Track.swift */; };
 		4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572920AE094B00310970 /* ArtistTableViewCell.swift */; };
 		4328572C20AE0C3400310970 /* TopArtistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572B20AE0C3400310970 /* TopArtistsTests.swift */; };
 		4328572F20AE0E8B00310970 /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC220ADD35E00E79661 /* TopViewModel.swift */; };
@@ -83,6 +88,11 @@
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4311677620AE1DE7000A150B /* techno_penguin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = techno_penguin.json; sourceTree = "<group>"; };
+		4311677920AE2200000A150B /* Tracks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracks.storyboard; sourceTree = "<group>"; };
+		4311677B20AE221A000A150B /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		4311677D20AE22AE000A150B /* TracksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksApi.swift; sourceTree = "<group>"; };
+		4311677F20AE22BE000A150B /* TracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModel.swift; sourceTree = "<group>"; };
+		4311678120AE24C9000A150B /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		4328572920AE094B00310970 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		4328572B20AE0C3400310970 /* TopArtistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistsTests.swift; sourceTree = "<group>"; };
 		4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
@@ -175,6 +185,10 @@
 		4311677820AE21BC000A150B /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				4311677920AE2200000A150B /* Tracks.storyboard */,
+				4311677B20AE221A000A150B /* TracksViewController.swift */,
+				4311677D20AE22AE000A150B /* TracksApi.swift */,
+				4311677F20AE22BE000A150B /* TracksViewModel.swift */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 				43679AB720AD202700E79661 /* SpotifyAccess.swift */,
 				43679AB920ADC9B000E79661 /* Authorization.swift */,
 				4342673720ADF79A00414FE2 /* Artist.swift */,
+				4311678120AE24C9000A150B /* Track.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -460,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4311677A20AE2200000A150B /* Tracks.storyboard in Resources */,
 				43EB8B7620AD1C5C00214856 /* SpotifyAccess.plist in Resources */,
 				4396709820A5E9D1002BC11E /* Login.storyboard in Resources */,
 				43679ABF20ADD34000E79661 /* Top.storyboard in Resources */,
@@ -651,6 +667,7 @@
 				437E5C1920A60E0A00C909E2 /* URLParameterEncoder.swift in Sources */,
 				437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */,
 				437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */,
+				4311677E20AE22AE000A150B /* TracksApi.swift in Sources */,
 				43679AC320ADD35E00E79661 /* TopViewModel.swift in Sources */,
 				43679ABD20ADD32700E79661 /* TopViewController.swift in Sources */,
 				4342673820ADF79A00414FE2 /* Artist.swift in Sources */,
@@ -663,14 +680,17 @@
 				43679ABA20ADC9B000E79661 /* Authorization.swift in Sources */,
 				43EB8B7420AD1AD700214856 /* LoginViewModel.swift in Sources */,
 				437E5C1F20A6109A00C909E2 /* Session.swift in Sources */,
+				4311678020AE22BE000A150B /* TracksViewModel.swift in Sources */,
 				4342673620ADF1CF00414FE2 /* Injector.swift in Sources */,
 				437E5C1D20A6103D00C909E2 /* Service.swift in Sources */,
 				4342673A20ADF87400414FE2 /* Decipher.swift in Sources */,
+				4311677C20AE221A000A150B /* TracksViewController.swift in Sources */,
 				4342673C20ADF8CF00414FE2 /* JSONDecipher.swift in Sources */,
 				437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */,
 				4396706820A5E33F002BC11E /* AppDelegate.swift in Sources */,
 				4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */,
 				4342673320ADE8B100414FE2 /* JSONParameterEncoder.swift in Sources */,
+				4311678220AE24C9000A150B /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
