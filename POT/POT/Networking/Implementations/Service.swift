@@ -32,16 +32,18 @@ class Service: NetworkService {
                              timeoutInterval: 5.0)
     request.httpMethod = "\(endpoint.method)"
 
-    switch endpoint.task {
-    case .request :
-      print("Request")
-    case .requestQueryParameters(let params) :
-      print("Request w/ Query")
-      if let params = params {
-        do {
-          try URLParameterEncoder.encode(request: &request, with: params)
-        } catch {
-          print("Error encoding in Service")
+    if let task = endpoint.task {
+      switch task {
+      case .request :
+        print("Request")
+      case .requestQueryParameters(let params) :
+        print("Request w/ Query")
+        if let params = params {
+          do {
+            try URLParameterEncoder.encode(request: &request, with: params)
+          } catch {
+            print("Error encoding in Service")
+          }
         }
       }
     }

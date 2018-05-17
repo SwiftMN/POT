@@ -71,3 +71,4 @@ fastlane/test_output
 /POT/POT.xcworkspace/contents.xcworkspacedata
 /POT/POT.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 .DS_Store
+/POT/POT/Boring/SpotifyAccess.plist

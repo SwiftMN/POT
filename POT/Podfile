@@ -2,10 +2,10 @@
 # platform :ios, '9.0'
 
 target 'POT' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for POT
+  pod 'OAuthSwift'
 
   target 'POTTests' do
     inherit! :search_paths
@@ -16,5 +16,4 @@ target 'POT' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end

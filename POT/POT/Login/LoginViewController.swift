@@ -9,5 +9,9 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
-
+  private let viewModel = LoginViewModel()
+  
+  @IBAction func loginToSpotify(_ sender: UIButton) {
+    viewModel.authorizeSpotify(from: self)
+  }
 }

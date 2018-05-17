@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>pot</string>
+				<string>oauth-swift</string>
 			</array>
 		</dict>
 	</array>

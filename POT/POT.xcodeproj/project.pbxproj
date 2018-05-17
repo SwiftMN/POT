@@ -25,6 +25,9 @@
 		4396708820A5E340002BC11E /* POTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396708720A5E340002BC11E /* POTUITests.swift */; };
 		4396709820A5E9D1002BC11E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396709720A5E9D1002BC11E /* Login.storyboard */; };
 		4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396709920A5E9EA002BC11E /* LoginViewController.swift */; };
+		43EB8B7220AA3C5E00214856 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB8B7120AA3C5E00214856 /* LoginApi.swift */; };
+		43EB8B7420AD1AD700214856 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB8B7320AD1AD700214856 /* LoginViewModel.swift */; };
+		43EB8B7620AD1C5C00214856 /* SpotifyAccess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43EB8B7520AD1C5C00214856 /* SpotifyAccess.plist */; };
 		56A5315D21BE4509D7FDFCB2 /* Pods_POT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD771384FD5F07C6EFEF64E1 /* Pods_POT.framework */; };
 		74FDD5825DFDDA8C82FEB8C3 /* Pods_POTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD51EC7F4EC0570B43200F2 /* Pods_POTTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,9 @@
 		4396708920A5E340002BC11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4396709720A5E9D1002BC11E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4396709920A5E9EA002BC11E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43EB8B7120AA3C5E00214856 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		43EB8B7320AD1AD700214856 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		43EB8B7520AD1C5C00214856 /* SpotifyAccess.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SpotifyAccess.plist; sourceTree = "<group>"; };
 		6BD51EC7F4EC0570B43200F2 /* Pods_POTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B00B8D1AB7FD24B1C678F9 /* Pods-POTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-POTTests/Pods-POTTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5499D9CEDE1549D7A7A74E2 /* Pods-POTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTTests/Pods-POTTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +220,7 @@
 				4396706B20A5E33F002BC11E /* Main.storyboard */,
 				4396706E20A5E340002BC11E /* Assets.xcassets */,
 				4396707020A5E340002BC11E /* LaunchScreen.storyboard */,
+				43EB8B7520AD1C5C00214856 /* SpotifyAccess.plist */,
 			);
 			path = Boring;
 			sourceTree = "<group>";
@@ -223,6 +230,8 @@
 			children = (
 				4396709720A5E9D1002BC11E /* Login.storyboard */,
 				4396709920A5E9EA002BC11E /* LoginViewController.swift */,
+				43EB8B7120AA3C5E00214856 /* LoginApi.swift */,
+				43EB8B7320AD1AD700214856 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EB8B7620AD1C5C00214856 /* SpotifyAccess.plist in Resources */,
 				4396709820A5E9D1002BC11E /* Login.storyboard in Resources */,
 				4396707220A5E340002BC11E /* LaunchScreen.storyboard in Resources */,
 				4396706F20A5E340002BC11E /* Assets.xcassets in Resources */,
@@ -481,9 +491,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-POT/Pods-POT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EB8B7220AA3C5E00214856 /* LoginApi.swift in Sources */,
 				437E5C1920A60E0A00C909E2 /* URLParameterEncoder.swift in Sources */,
 				437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */,
 				437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */,
@@ -537,6 +551,7 @@
 				437E5C1B20A60FDE00C909E2 /* NetworkService.swift in Sources */,
 				437E5C1420A60CDE00C909E2 /* ParamterEncoder.swift in Sources */,
 				4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */,
+				43EB8B7420AD1AD700214856 /* LoginViewModel.swift in Sources */,
 				437E5C1F20A6109A00C909E2 /* Session.swift in Sources */,
 				437E5C1D20A6103D00C909E2 /* Service.swift in Sources */,
 				437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */,
