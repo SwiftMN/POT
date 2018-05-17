@@ -25,13 +25,12 @@ final class LoginViewModel {
   }
 
   func authorizeSpotify(from: UIViewController) {
-    let tokenURL = "https://accounts.spotify.com/api/token"
-    let authorizeURL = "https://accounts.spotify.com/authorize"
-
+    let authorizeURL = LoginApi.authorize.fullURL
+    let tokenURL = LoginApi.token.fullURL
     let oauthswift = OAuth2Swift(consumerKey: spotifyAccess.key,
                              consumerSecret: spotifyAccess.secret,
-                             authorizeUrl: authorizeURL,
-                             accessTokenUrl: tokenURL,
+                             authorizeUrl: authorizeURL.absoluteString,
+                             accessTokenUrl: tokenURL.absoluteString,
                              responseType: "code")
 
     let scopes = "user-library-modify user-top-read playlist-read-private user-read-birthdate"
