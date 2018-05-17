@@ -7,8 +7,12 @@ target 'POT' do
   # Pods for POT
   pod 'OAuthSwift'
 
+  # Dependency Injection
   pod 'Swinject'
   pod 'SwinjectPropertyLoader'
+
+  # Flair
+  pod 'lottie-ios'
 
   target 'POTTests' do
     inherit! :search_paths

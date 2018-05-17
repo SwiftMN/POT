@@ -48,16 +48,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeU-cM-QBI">
+                                <rect key="frame" x="27" y="173" width="320" height="320"/>
+                                <color key="backgroundColor" name="PotBlack"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="P4x-jI-kCr"/>
+                                    <constraint firstAttribute="height" constant="320" id="mdJ-Xa-GGP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="PotBlack"/>
                         <constraints>
+                            <constraint firstItem="eeU-cM-QBI" firstAttribute="centerX" secondItem="Gdx-cJ-1df" secondAttribute="centerX" id="9XN-nb-RdD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="kpG-mX-Hy4" secondAttribute="bottom" constant="20" id="CFi-IW-ddD"/>
                             <constraint firstItem="BL0-32-Fcm" firstAttribute="trailing" secondItem="kpG-mX-Hy4" secondAttribute="trailing" constant="9" id="NIh-aC-xCQ"/>
                             <constraint firstItem="kpG-mX-Hy4" firstAttribute="leading" secondItem="BL0-32-Fcm" secondAttribute="leading" constant="9" id="mVQ-hW-Jbg"/>
+                            <constraint firstItem="eeU-cM-QBI" firstAttribute="centerY" secondItem="Gdx-cJ-1df" secondAttribute="centerY" id="nPP-CI-lA4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BL0-32-Fcm"/>
                     </view>
                     <connections>
+                        <outlet property="animationContainer" destination="eeU-cM-QBI" id="7Ou-RZ-S0f"/>
                         <outlet property="loginButton" destination="aKL-rG-fex" id="mVy-v4-rb6"/>
                         <outlet property="viewTop" destination="fQ2-UU-ibE" id="R99-80-n4S"/>
                     </connections>
@@ -76,6 +87,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="PotBlack">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
         <namedColor name="PotBlack">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>

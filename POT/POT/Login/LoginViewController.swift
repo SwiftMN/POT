@@ -9,6 +9,7 @@
 import UIKit
 import Swinject
 import SwinjectPropertyLoader
+import Lottie
 
 final class LoginViewController: UIViewController {
   
@@ -16,6 +17,7 @@ final class LoginViewController: UIViewController {
 
   @IBOutlet weak var viewTop: UIButton!
   @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var animationContainer: UIView!
   private var observers = [NSKeyValueObservation]()
 
   override func viewDidLoad() {
@@ -57,7 +59,19 @@ final class LoginViewController: UIViewController {
 
                 self?.viewTop.isHidden = false
                 self?.loginButton.isHidden = true
+                DispatchQueue.main.async {
+                  self?.configureAnimation()
+                }
               }
             }]
+  }
+
+  private func configureAnimation() {
+    let lottie = LOTAnimationView(name: "techno_penguin")
+    lottie.contentMode = .scaleAspectFit
+    lottie.frame = animationContainer.frame
+    animationContainer.addSubview(lottie)
+    lottie.loopAnimation = true
+    lottie.play()
   }
 }

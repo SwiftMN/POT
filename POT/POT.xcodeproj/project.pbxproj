@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
+		4311677720AE1DE7000A150B /* techno_penguin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4311677620AE1DE7000A150B /* techno_penguin.json */; };
 		4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572920AE094B00310970 /* ArtistTableViewCell.swift */; };
 		4328572C20AE0C3400310970 /* TopArtistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572B20AE0C3400310970 /* TopArtistsTests.swift */; };
 		4328572F20AE0E8B00310970 /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC220ADD35E00E79661 /* TopViewModel.swift */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4311677620AE1DE7000A150B /* techno_penguin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = techno_penguin.json; sourceTree = "<group>"; };
 		4328572920AE094B00310970 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		4328572B20AE0C3400310970 /* TopArtistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistsTests.swift; sourceTree = "<group>"; };
 		4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		4396709520A5E444002BC11E /* Boring */ = {
 			isa = PBXGroup;
 			children = (
+				4311677620AE1DE7000A150B /* techno_penguin.json */,
 				4396706720A5E33F002BC11E /* AppDelegate.swift */,
 				4396706B20A5E33F002BC11E /* Main.storyboard */,
 				4396706E20A5E340002BC11E /* Assets.xcassets */,
@@ -453,6 +456,7 @@
 				4396709820A5E9D1002BC11E /* Login.storyboard in Resources */,
 				43679ABF20ADD34000E79661 /* Top.storyboard in Resources */,
 				4396707220A5E340002BC11E /* LaunchScreen.storyboard in Resources */,
+				4311677720AE1DE7000A150B /* techno_penguin.json in Resources */,
 				4396706F20A5E340002BC11E /* Assets.xcassets in Resources */,
 				4396706D20A5E33F002BC11E /* Main.storyboard in Resources */,
 			);
@@ -581,12 +585,14 @@
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectPropertyLoader/SwinjectPropertyLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectPropertyLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
