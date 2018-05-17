@@ -51,7 +51,7 @@ final class LoginViewController: UIViewController {
                   return auth
                 }
 
-                Injector.shared.container.register(Service.self) { resolver in
+                Injector.shared.container.register(NetworkService.self) { resolver in
                   return Service()
                 }
 

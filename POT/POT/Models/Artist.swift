@@ -18,7 +18,12 @@ class Artist: NSObject, Codable {
   }
 }
 
-struct TopArtists : Codable {
+class TopArtists : NSObject, Codable {
   let href: String
   let items: [Artist]
+
+  init(href: String, items: [Artist]) {
+    self.href = href
+    self.items = items
+  }
 }

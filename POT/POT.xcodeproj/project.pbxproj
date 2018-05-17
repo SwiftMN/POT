@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
 		4328572A20AE094B00310970 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572920AE094B00310970 /* ArtistTableViewCell.swift */; };
+		4328572C20AE0C3400310970 /* TopArtistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328572B20AE0C3400310970 /* TopArtistsTests.swift */; };
+		4328572F20AE0E8B00310970 /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC220ADD35E00E79661 /* TopViewModel.swift */; };
+		4328573020AE0F0100310970 /* TopApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AC020ADD34C00E79661 /* TopApi.swift */; };
+		4328573120AE0F0800310970 /* SpotifyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AB720AD202700E79661 /* SpotifyAccess.swift */; };
+		4328573220AE0F0B00310970 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AB920ADC9B000E79661 /* Authorization.swift */; };
+		4328573320AE0F0E00310970 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673720ADF79A00414FE2 /* Artist.swift */; };
+		4328573420AE0F3000310970 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0D20A60BBA00C909E2 /* Endpoint.swift */; };
+		4328573520AE0F3700310970 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */; };
+		4328573620AE0F3D00310970 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1120A60C2900C909E2 /* HTTPTask.swift */; };
+		4328573720AE0F4F00310970 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1C20A6103D00C909E2 /* Service.swift */; };
+		4328573820AE0F5400310970 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1A20A60FDE00C909E2 /* NetworkService.swift */; };
+		4328573920AE0F6900310970 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1E20A6109A00C909E2 /* Session.swift */; };
+		4328573A20AE0F7600310970 /* ParamterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1320A60CDE00C909E2 /* ParamterEncoder.swift */; };
+		4328573B20AE0F8000310970 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */; };
+		4328573C20AE0F8200310970 /* JSONDecipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673B20ADF8CF00414FE2 /* JSONDecipher.swift */; };
+		4328573D20AE0F8600310970 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1820A60E0A00C909E2 /* URLParameterEncoder.swift */; };
+		4328573E20AE0F9300310970 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1520A60DA300C909E2 /* HTTPError.swift */; };
+		4328573F20AE107E00310970 /* Decipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673920ADF87400414FE2 /* Decipher.swift */; };
 		4342673320ADE8B100414FE2 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */; };
 		4342673620ADF1CF00414FE2 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673520ADF1CF00414FE2 /* Injector.swift */; };
 		4342673820ADF79A00414FE2 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342673720ADF79A00414FE2 /* Artist.swift */; };
@@ -33,7 +51,6 @@
 		4396706D20A5E33F002BC11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396706B20A5E33F002BC11E /* Main.storyboard */; };
 		4396706F20A5E340002BC11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4396706E20A5E340002BC11E /* Assets.xcassets */; };
 		4396707220A5E340002BC11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396707020A5E340002BC11E /* LaunchScreen.storyboard */; };
-		4396707D20A5E340002BC11E /* POTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396707C20A5E340002BC11E /* POTTests.swift */; };
 		4396708820A5E340002BC11E /* POTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396708720A5E340002BC11E /* POTUITests.swift */; };
 		4396709820A5E9D1002BC11E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4396709720A5E9D1002BC11E /* Login.storyboard */; };
 		4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396709920A5E9EA002BC11E /* LoginViewController.swift */; };
@@ -65,6 +82,7 @@
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4328572920AE094B00310970 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		4328572B20AE0C3400310970 /* TopArtistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistsTests.swift; sourceTree = "<group>"; };
 		4342673220ADE8B100414FE2 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		4342673520ADF1CF00414FE2 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		4342673720ADF79A00414FE2 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
@@ -93,7 +111,6 @@
 		4396707120A5E340002BC11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4396707320A5E340002BC11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4396707820A5E340002BC11E /* POTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4396707C20A5E340002BC11E /* POTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POTTests.swift; sourceTree = "<group>"; };
 		4396707E20A5E340002BC11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4396708320A5E340002BC11E /* POTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4396708720A5E340002BC11E /* POTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POTUITests.swift; sourceTree = "<group>"; };
@@ -266,8 +283,8 @@
 		4396707B20A5E340002BC11E /* POTTests */ = {
 			isa = PBXGroup;
 			children = (
-				4396707C20A5E340002BC11E /* POTTests.swift */,
 				4396707E20A5E340002BC11E /* Info.plist */,
+				4328572B20AE0C3400310970 /* TopArtistsTests.swift */,
 			);
 			path = POTTests;
 			sourceTree = "<group>";
@@ -647,7 +664,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4396707D20A5E340002BC11E /* POTTests.swift in Sources */,
+				4328573820AE0F5400310970 /* NetworkService.swift in Sources */,
+				4328573420AE0F3000310970 /* Endpoint.swift in Sources */,
+				4328573320AE0F0E00310970 /* Artist.swift in Sources */,
+				4328572F20AE0E8B00310970 /* TopViewModel.swift in Sources */,
+				4328573620AE0F3D00310970 /* HTTPTask.swift in Sources */,
+				4328573020AE0F0100310970 /* TopApi.swift in Sources */,
+				4328573520AE0F3700310970 /* HTTPMethod.swift in Sources */,
+				4328573120AE0F0800310970 /* SpotifyAccess.swift in Sources */,
+				4328573D20AE0F8600310970 /* URLParameterEncoder.swift in Sources */,
+				4328573F20AE107E00310970 /* Decipher.swift in Sources */,
+				4328573920AE0F6900310970 /* Session.swift in Sources */,
+				4328573C20AE0F8200310970 /* JSONDecipher.swift in Sources */,
+				4328573720AE0F4F00310970 /* Service.swift in Sources */,
+				4328573A20AE0F7600310970 /* ParamterEncoder.swift in Sources */,
+				4328572C20AE0C3400310970 /* TopArtistsTests.swift in Sources */,
+				4328573B20AE0F8000310970 /* JSONParameterEncoder.swift in Sources */,
+				4328573220AE0F0B00310970 /* Authorization.swift in Sources */,
+				4328573E20AE0F9300310970 /* HTTPError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

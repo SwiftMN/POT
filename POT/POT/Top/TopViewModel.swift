@@ -12,7 +12,7 @@ import Swinject
 final class TopViewModel: NSObject {
 
   private let authorization: Authorization
-  private let service: Service
+  private let service: NetworkService
   private let api: TopApi
 
   @objc dynamic var artists = [Artist]()
@@ -20,7 +20,7 @@ final class TopViewModel: NSObject {
   init(container: Container) {
     guard
       let auth = container.resolve(Authorization.self),
-      let service = container.resolve(Service.self)
+      let service = container.resolve(NetworkService.self)
     else { fatalError("Need Authorization & Service") }
 
     authorization = auth
