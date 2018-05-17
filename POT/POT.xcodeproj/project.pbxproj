@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E37970D2040D23DF0CD17B7 /* Pods_POTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D3EDC2D4087BD3BCA835C /* Pods_POTUITests.framework */; };
+		43679AB820AD202700E79661 /* SpotifyAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43679AB720AD202700E79661 /* SpotifyAccess.swift */; };
 		437E5C0E20A60BBA00C909E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0D20A60BBA00C909E2 /* Endpoint.swift */; };
 		437E5C1020A60C0A00C909E2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */; };
 		437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437E5C1120A60C2900C909E2 /* HTTPTask.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		00243FEF92DDA063658F7C7C /* Pods-POT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POT/Pods-POT.debug.xcconfig"; sourceTree = "<group>"; };
 		108BC64967492ACBDC8BD2EE /* Pods-POTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTUITests/Pods-POTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43679AB720AD202700E79661 /* SpotifyAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAccess.swift; sourceTree = "<group>"; };
 		437E5C0D20A60BBA00C909E2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		437E5C0F20A60C0A00C909E2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		437E5C1120A60C2900C909E2 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		43679AB620AD200600E79661 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43679AB720AD202700E79661 /* SpotifyAccess.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		437E5C0B20A60B6C00C909E2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 		4396706620A5E33F002BC11E /* POT */ = {
 			isa = PBXGroup;
 			children = (
+				43679AB620AD200600E79661 /* Models */,
 				437E5C2220A61C8400C909E2 /* POT.entitlements */,
 				437E5C0B20A60B6C00C909E2 /* Networking */,
 				4396707320A5E340002BC11E /* Info.plist */,
@@ -493,10 +504,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-POT/Pods-POT-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectPropertyLoader/SwinjectPropertyLoader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectPropertyLoader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -549,6 +564,7 @@
 				437E5C1620A60DA300C909E2 /* HTTPError.swift in Sources */,
 				437E5C1220A60C2900C909E2 /* HTTPTask.swift in Sources */,
 				437E5C1B20A60FDE00C909E2 /* NetworkService.swift in Sources */,
+				43679AB820AD202700E79661 /* SpotifyAccess.swift in Sources */,
 				437E5C1420A60CDE00C909E2 /* ParamterEncoder.swift in Sources */,
 				4396709A20A5E9EA002BC11E /* LoginViewController.swift in Sources */,
 				43EB8B7420AD1AD700214856 /* LoginViewModel.swift in Sources */,

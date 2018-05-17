@@ -1,0 +1,6 @@
+framework module SwinjectPropertyLoader {
+  umbrella header "SwinjectPropertyLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}

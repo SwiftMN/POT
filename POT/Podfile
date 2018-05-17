@@ -7,6 +7,9 @@ target 'POT' do
   # Pods for POT
   pod 'OAuthSwift'
 
+  pod 'Swinject'
+  pod 'SwinjectPropertyLoader'
+
   target 'POTTests' do
     inherit! :search_paths
     # Pods for testing
