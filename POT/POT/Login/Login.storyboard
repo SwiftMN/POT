@@ -7,34 +7,41 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login-->
+        <!--Authorize-->
         <scene sceneID="sRg-ms-qnP">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hsV-5C-Wun" customClass="LoginViewController" customModule="POT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Authorize" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hsV-5C-Wun" customClass="LoginViewController" customModule="POT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdx-cJ-1df">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kpG-mX-Hy4">
-                                <rect key="frame" x="9" y="572" width="357" height="75"/>
+                                <rect key="frame" x="9" y="561" width="357" height="86"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKL-rG-fex">
                                         <rect key="frame" x="0.0" y="0.0" width="357" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="1Eh-5A-GAr"/>
                                         </constraints>
-                                        <state key="normal" title="Login To Spotify"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Login To Spotify">
+                                            <color key="titleColor" name="PotGreen"/>
+                                        </state>
                                         <connections>
                                             <action selector="loginToSpotify:" destination="hsV-5C-Wun" eventType="touchUpInside" id="1Sl-Qf-Qt9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ2-UU-ibE">
-                                        <rect key="frame" x="0.0" y="45" width="357" height="30"/>
-                                        <state key="normal" title="Top Artists &amp; Tracks"/>
+                                        <rect key="frame" x="0.0" y="45" width="357" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Top Artists">
+                                            <color key="titleColor" name="PotGreen"/>
+                                        </state>
                                         <connections>
                                             <segue destination="XlT-3y-3Zv" kind="show" id="WyT-9G-3Rs"/>
                                         </connections>
@@ -42,7 +49,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="PotBlack"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="kpG-mX-Hy4" secondAttribute="bottom" constant="20" id="CFi-IW-ddD"/>
                             <constraint firstItem="BL0-32-Fcm" firstAttribute="trailing" secondItem="kpG-mX-Hy4" secondAttribute="trailing" constant="9" id="NIh-aC-xCQ"/>
@@ -68,4 +75,12 @@
             <point key="canvasLocation" x="929" y="221"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="PotBlack">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="PotGreen">
+            <color red="0.62699997425079346" green="0.84500002861022949" blue="0.49200001358985901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
