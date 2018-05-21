@@ -23,7 +23,7 @@ final class TracksViewModel: NSObject {
       let auth = container.resolve(Authorization.self),
       let service = container.resolve(NetworkService.self),
       let art = container.resolve(Artist.self)
-      else { fatalError("Need Authorization & Service") }
+    else { fatalError("Need Authorization & Service") }
 
     authorization = auth
     self.service = service
